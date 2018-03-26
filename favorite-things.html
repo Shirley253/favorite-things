@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="js/jquery-3.3.1.js"type="text/javascript"></script>
+    <script src="js/scripts.js"type="text/javascript"></script>
     <title>Favorites Form</title>
   </head>
   <body>
-    <div class="container ml-md-4"
+    <div class="container ml-md-4">
     <form id="formOne">
       <div class="form-group">
         <label for="favFood">Favorite Foods</label>
@@ -19,7 +21,16 @@
         <label for="favoriteColor">Favorite Color</label>
         <input id="favoriteColor" class="form-control" type="text">
       </div>
-      <button class="button"type="submit">Click-Me!</button>
-      <p>Your favorite things are<span class="clickable" id="favFoods"></span>, <span class="clickable" id="favoriteVacation"></span>, and <span class="clickable" id="favoriteColor"></span></p>
+      <button class="button" type="submit">Click-Me!</button>
+    </form>
+      <!-- <p>Your favorite things are<span class="clickable" class="favFoods"></span>, <span class="clickable" class="favoriteVacation"></span>, and <span class="clickable" class="favoriteColor"></span></p> -->
+
+      <div class="results">
+      <ul>
+        <li><span class="food-result"></span></li>
+        <li><span class="vacation-result"></span></li>
+        <li><span class="color-result"></span></li>
+      </ul>
+    </div>
   </body>
 </html>
